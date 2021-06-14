@@ -3,8 +3,7 @@ h1,
 h2,
 ul,
 li,
-p,
-a {
+p {
   margin: 0;
   padding: 0;
 }
@@ -58,15 +57,28 @@ body {
   font-size: 0.9375rem;
 }
 
+
 .topics li {
   border-bottom: 2px solid #E5E5E5;
-  padding: 7px 0px 7px 24px;
+  background: linear-gradient(#FFB455, #ED7839);
 }
 
-.topics li a{
+.topics li a {
   color: #725C5C;
   font-weight: 500;
+  display: block;
+  padding: 7px 0 7px 24px;
+  background: #fff;
+  transition: .3s;
 }
 
+.topics li a:hover {
+  margin-left: 5px;
+  background: #FDF1EB;
+}
+
+.content-container {
+  margin-left: 220px;
+}
 
 
