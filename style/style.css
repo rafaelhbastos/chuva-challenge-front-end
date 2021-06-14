@@ -29,13 +29,13 @@ body {
   height: 1000px;
 }
 
-.header-container {
+.side-menu-container {
   width: 220px;
   background: #fff;
   position: fixed;
 }
 
-.header {
+.side-menu {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   height: 100vh;
 }
@@ -77,8 +77,92 @@ body {
   background: #FDF1EB;
 }
 
-.content-container {
-  margin-left: 220px;
+.container {
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 256px;
+  padding-right: 29px;
 }
 
+.header {
+  background: #FDF1EB;
+  width: 100vw;
+}
+
+.header-title {
+  color: #725C5C;
+  margin: 5px 0 4px 0;
+}
+
+.header-title p,
+.header-title h2 {
+  font-weight: 400;
+}
+
+.header-title p {
+  font-size: 0.875rem;
+}
+
+.header-title h2 {
+  margin: 2px auto 0 auto;
+  font-size: 1.375rem;
+}
+
+.user {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  color: #333333;
+  margin: 17px 0;
+}
+
+.language {
+  display: flex;
+  padding: 8px 9px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.language p {
+  font-size: 0.875rem;
+  margin: auto 5px auto 0;
+}
+
+.language .language-image {
+  width: 22px;
+  height: 22px;
+  margin: auto 0;
+}
+
+.language .dropdown-image {
+  width: 10px;
+  height: 8px;
+  margin: auto 4px auto 0;
+}
+
+.login {
+  display: flex;
+  margin: auto 0;
+}
+
+.login .login-text {
+  margin-left: 22px;
+  text-align: right;
+}
+
+.login img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 7px;
+
+}
+
+.login .login-text :first-child {
+  font-size: 0.875rem;
+}
+
+.login .login-text :last-child {
+  font-size: 0.75rem;
+}
 
