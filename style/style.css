@@ -146,7 +146,7 @@ body {
 
 .login {
   display: flex;
-  margin: auto 0;
+  margin: auto 10px;
 }
 
 .login .login-text {
@@ -187,6 +187,9 @@ body {
   background-color: rgba(141, 53, 6, 0.5);
   height: 439px;
   width: 783px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .video .video-title {
@@ -197,9 +200,32 @@ body {
   letter-spacing: 0.05rem;
 }
 
-.detail-btn {
-  margin: 20px 0 20px 10px;
+.video .video-user {
+  padding: 0 0 60px 35px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
   display: flex;
+}
+
+.video .video-user img {
+  border-radius: 50%;
+  border: 1px solid #ED7839;
+  margin-right: 17px;
+}
+
+.video .video-user .text p {
+  font-size: 2.25rem;
+}
+
+.video .video-user .text span {
+  font-size: 1.25rem;
+}
+
+.detail-btn {
+  margin: 20px 10px 12px 10px;
+  display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -231,3 +257,4 @@ body {
 .detail-btn :first-child a span {
   margin-left: 5px;
 }
+
