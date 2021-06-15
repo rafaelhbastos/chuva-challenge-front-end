@@ -85,6 +85,7 @@ body {
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 256px;
   padding-right: 29px;
 }
@@ -117,7 +118,7 @@ body {
   display: flex;
   font-family: 'Quicksand', sans-serif;
   color: #333333;
-  margin: 17px 0;
+  margin: 17px 0 auto 10px;
 }
 
 .language {
@@ -223,7 +224,7 @@ body {
 }
 
 .detail-btn {
-  margin: 20px 10px 12px 10px;
+  margin: 20px 10px 10px 10px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -258,3 +259,65 @@ body {
   margin-left: 5px;
 }
 
+.details-text .ask {
+  text-align: right;
+  margin: 0 10px 5px 10px;
+  font-size: 0.875rem;
+  color: #ED7839;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.detail-box {
+  margin: 0 10px 0 30px;
+  max-width: 242px;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  height: 439px;
+}
+
+.detail-title {
+  color: #4E4E4E;
+  font-weight: 500;
+  background: #FDF1EB;
+  padding: 10px 15px;
+  font-size: 0.833333333rem;
+}
+
+.detail-inside {
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.875rem;
+  color: #5C5C5C;
+}
+
+.detail-about {
+  margin-bottom: 20px;
+}
+
+.detail-about p {
+  margin: 2px auto;
+  font-size: 0.75rem;
+}
+
+.detail-about p span {
+  font-weight: bold;
+}
+
+.detail-authors {
+  margin-bottom: 40px;
+}
+
+.detail-authors .authors {
+  font-weight: bold;
+}
+
+.detail-authors p {
+  margin-bottom: 2px;
+}
+
+.detail-college p {
+  margin-bottom: 2px;
+  font-size: 0.75rem;
+  color: #ACACAC
+}
