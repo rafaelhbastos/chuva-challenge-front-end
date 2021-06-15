@@ -3,7 +3,10 @@ h1,
 h2,
 ul,
 li,
-p {
+p,
+a,
+button,
+img {
   margin: 0;
   padding: 0;
 }
@@ -194,4 +197,37 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.detail-btn {
+  margin: 20px 0 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.detail-btn img {
+  width: 19px;
+  height: 19px;
+}
+
+.detail-btn .btn {
+  background: #ED7839;
+  border: none;
+  border-radius: 4px;
+  margin: 0 2.5px 5px 2.5px;
+}
+
+.detail-btn .btn a {
+  display: block;
+  padding: 6px 12px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.detail-btn :first-child a {
+  display: flex;
+}
+
+.detail-btn :first-child a span {
+  margin-left: 5px;
+}
