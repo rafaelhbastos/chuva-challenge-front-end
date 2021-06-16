@@ -436,6 +436,52 @@ body {
   margin-right: 6px;
 }
 
+.write .discussion-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.875rem;
+  color: #5C5C5C; 
+  font-weight: normal;
+}
+ 
+.write form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.write form label {
+  font-weight: bold;
+  color: #ED7839;
+}
+
+.write form input,
+.write form textarea {
+  border: 1px solid #CCCCCC;
+  padding: 10px 24px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.875rem;
+  color: #4D4D4D;
+}
+
+.write form input {
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.write form input:placeholder-shown {
+  opacity: .75;
+
+}
+
+.write form input:focus,
+.write form textarea:focus {
+  outline: none;
+}
+
+.write .discussion-btn {
+  position: unset;
+}
+
 .topic {
   max-width: 1050px;
   padding: 18px 24px;
