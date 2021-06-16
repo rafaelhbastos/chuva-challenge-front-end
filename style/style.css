@@ -230,6 +230,7 @@ body {
   border-radius: 50%;
   border: 1px solid #ED7839;
   margin-right: 17px;
+  padding: 4.26px 4.57px;
 }
 
 .video .video-user .text p {
@@ -403,7 +404,7 @@ body {
   margin: 27px 10px 35px 25px;
 }
 
-.pre-button {
+.discussion-message {
   max-width: 630px;
   margin: 0 auto;
   font-family: 'Quicksand', sans-serif;
@@ -468,19 +469,76 @@ body {
   border-radius: 3px;
 }
 
-.write form input:placeholder-shown {
-  opacity: .75;
-
-}
-
 .write form input:focus,
 .write form textarea:focus {
   outline: none;
 }
 
-.write .discussion-btn {
-  position: unset;
+.write form textarea {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
+
+.write .send {
+  display: flex;
+  border: 1px solid #CCCCCC;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.js [data-show="discussion"] {
+  display: none;
+  animation: show-down .8s forwards;
+}
+
+.js [data-show="discussion"].active {
+  display: block;
+}
+
+.send .text-options {
+  flex: 1 1 840px;
+  background: #EAF1F2;
+}
+
+.send .text-options img {
+  display: inline-block;
+  margin: 11px 15px;
+}
+
+.send .discussion-btn {
+  position: unset;
+  border-radius: unset;
+  border-bottom-right-radius: 3px;
+  flex: 1 1 210px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.send .discussion-btn:hover {
+  border-radius: 3px;
+}
+
+.topic-sent .discussion-btn {
+  right: calc(50% - 109.5px);
+  padding: 8px 55px;
+}
+
+.topic-sent .discussion-message {
+  margin-top: 18px;
+  max-width: 900px;
+}
+
+.topic-sent .discover {
+  text-align: center;
+  margin: 30px auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #F48F44;
+}
+
 
 .topic {
   max-width: 1050px;
@@ -496,11 +554,11 @@ body {
   max-width: 1050px;
   margin: 0 15px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 .topic-commented .topic {
   margin: 0;
+  cursor: pointer;
   box-shadow: none;
 }
 
@@ -553,6 +611,38 @@ body {
   margin-right: 15px;
 }
 
+[data-show="discussion"] .topic {
+  position: relative;
+}
+
+.topic-confirmed {
+  max-width: 1050px;
+  height: 120px;
+  margin: auto 15px;
+  position: absolute;
+  display: none;
+}
+
+.topic-confirmed img{
+  margin: 0 auto;
+}
+
+.topic-confirmed .feedback {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #707070;
+  text-align: center;
+  margin: 8px auto;
+}
+
+.topic-confirmed .edit {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.875rem;
+  color: #ED7839;
+  text-decoration: underline;
+  text-align: center;
+}
+
 .comments {
   max-width: 1050px;
   margin: 0;
@@ -564,14 +654,14 @@ body {
 
 .js [data-show="comments"] {
   display: none;
-  animation: comments 0.5s forwards;
+  animation: show-down 0.5s forwards;
 }
 
 .js [data-show="comments"].active {
   display: block;
 }
 
-@keyframes comments {
+@keyframes show-down {
   from {
     opacity: 0;
     transform: translate3d(0, -30px, 0);

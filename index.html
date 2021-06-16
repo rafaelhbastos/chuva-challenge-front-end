@@ -149,7 +149,7 @@
           <h2>Discussões</h2>
         </div>
 
-        <div class="discussion-content">
+        <div class="discussion-content active" data-show="discussion">
           <div class="discussion-text">
             <p class="discussion-title">Compartilhe suas ideias ou dúvidas com os autores!</p>
             <div class="discussion-images">
@@ -157,7 +157,7 @@
               <img src="./img/icone2.svg" alt="icone-discussion-2">
               <img src="./img/icone3.svg" alt="icone-discussion-3">
             </div>
-            <p class="pre-button">Sabia que o maior estímulo no desenvolvimento 
+            <p class="discussion-message">Sabia que o maior estímulo no desenvolvimento 
               científico e cultural é a curiosidade? Deixe seus questionamentos ou 
               sugestões para o autor!
             </p>
@@ -165,7 +165,7 @@
           </div>
         </div>
 
-        <div class="discussion-content write">
+        <div class="discussion-content write" data-show="discussion">
           <div class="discussion-text">
             <p class="discussion-title">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
             <form>
@@ -175,9 +175,36 @@
               <textarea name="content" id="content" rows="5"></textarea>
             </form>
             <div class="send">
-              
-              <button class="discussion-btn">Enviar</button>
+              <div class="text-options">
+                <img src="./img/Shape.png" alt="bold-shape">
+                <img src="./img/Shape-1.png" alt="italic-shape">
+              </div>
+                <button class="discussion-btn">Enviar</button>
             </div>
+          </div>
+        </div>
+
+        <div class="active" data-show="discussion">
+          <div class="discussion-content topic-sent">
+            <div class="discussion-text">
+              <p class="discussion-title">Seu tópico foi enviado com sucesso! :D</p>
+              <p class="discussion-message">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+              <p class="discover">Descubra outros trabalhos!</p>
+              <button class="discussion-btn">criar novo tópico</button>
+            </div>
+          </div>
+          <div class="topic">
+            <p class="topic-subject">Assunto da pergunta aparece aqui</p>
+            <p class="topic-name">Carlos Henrique Santos</p>
+            <p class="topic-question">Comecinho da pergunta aparece aqui resente relato inscreve-se no 
+              campo da análise da dimensão e impacto de processo formativo situado impacto
+               de processo formativo processo...
+            </p>
+          </div>
+          <div class="topic-confirmed">
+            <img src="./img/confirm.png" alt="comment-confirmed">
+            <p class="feedback">Aguardando feedback dos autores</p>
+            <p class="edit">Editar tópico</p>
           </div>
         </div>
 
