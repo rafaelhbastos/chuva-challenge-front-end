@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <title>SLACA 2019</title>
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -51,7 +52,10 @@
               <p>Bem vindo!</p>
               <p>alguem12@galoascience.com</p>
             </div>
-            <img src="./img/user-photo.png" alt="user-photo">
+            <div class="account">
+              <img src="./img/user-photo.png" alt="user-photo">
+              <span class="notif">2</span>
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +148,8 @@
         <div class="box-title">
           <h2>Discussões</h2>
         </div>
-        <div class="discussion-box">
+
+        <div class="discussion-content">
           <div class="discussion-text">
             <p class="discussion-title">Compartilhe suas ideias ou dúvidas com os autores!</p>
             <div class="discussion-images">
@@ -159,37 +164,115 @@
             <button class="discussion-btn"><img src="./img/icon-criar.png" alt="icon-create"> criar tópico</button>
           </div>
         </div>
-      </div>
-      <div class="topic">
-        <p class="topic-subject">Assunto da pergunta aparece aqui</p>
-        <p class="topic-name">Carlos Henrique Santos</p>
-        <p class="topic-question">Comecinho da pergunta aparece aqui resente relato inscreve-se no 
-          campo da análise da dimensão e impacto de processo formativo situado impacto
-           de processo formativo processo...
-        </p>
-        <div class="topic-footer">
-          <span class="options"></span>
-          <div class="topic-likes">
-            <img src="./img/heart.png" alt="heart-likes">
+
+        <div class="discussion-content">
+          <div class="discussion-text">
+            <p class="discussion-title">Compartilhe suas ideias ou dúvidas com os autores!</p>
+            <div class="discussion-images">
+              <img src="./img/icone1.svg" alt="icone-discussion-1">
+              <img src="./img/icone2.svg" alt="icone-discussion-2">
+              <img src="./img/icone3.svg" alt="icone-discussion-3">
+            </div>
+            <p class="pre-button">Sabia que o maior estímulo no desenvolvimento 
+              científico e cultural é a curiosidade? Deixe seus questionamentos ou 
+              sugestões para o autor!
+            </p>
+            <button class="discussion-btn"><img src="./img/icon-criar.png" alt="icon-create"> criar tópico</button>
           </div>
-          <p>1 like</p>
-          <p>1 resposta</p>
         </div>
-      </div>
-      <div class="topic">
-        <p class="topic-subject">Assunto da pergunta aparece aqui</p>
-        <p class="topic-name">Carlos Henrique Santos</p>
-        <p class="topic-question">Comecinho da pergunta aparece aqui resente relato inscreve-se no 
-          campo da análise da dimensão e impacto de processo formativo situado impacto
-           de processo formativo processo...
-        </p>
-        <div class="topic-footer">
-          <span class="options"></span>
-          <div class="topic-likes">
-            <img src="./img/heart.png" alt="heart-likes">
+
+        <div class="topic">
+          <p class="topic-subject">Assunto da pergunta aparece aqui</p>
+          <p class="topic-name">Carlos Henrique Santos</p>
+          <p class="topic-question">Comecinho da pergunta aparece aqui resente relato inscreve-se no 
+            campo da análise da dimensão e impacto de processo formativo situado impacto
+             de processo formativo processo...
+          </p>
+          <div class="topic-footer">
+            <span class="options"></span>
+            <div class="topic-likes">
+              <img src="./img/heart.png" alt="heart-likes">
+            </div>
+            <p>1 like</p>
+            <p>1 resposta</p>
           </div>
-          <p>1 like</p>
-          <p>1 resposta</p>
+        </div>
+
+        <div class="topic-commented">
+          <div class="topic">
+            <p class="topic-subject">Assunto da pergunta aparece aqui</p>
+            <p class="topic-name">Carlos Henrique Santos</p>
+            <p class="topic-question">Comecinho da pergunta aparece aqui resente relato inscreve-se no 
+              campo da análise da dimensão e impacto de processo formativo situado impacto
+              de processo formativo processo...
+            </p>
+            <div class="topic-footer">
+              <span class="options"></span>
+              <div class="topic-likes">
+                <img src="./img/heart.png" alt="heart-likes">
+              </div>
+              <p>1 like</p>
+              <p>1 resposta</p>
+            </div>
+          </div>
+          <div class="comments" data-show="comments">
+            <div class="author">
+              <p class="author-name">Adriano da Silva</p>
+              <div class="author-authen">
+                <p>Autor</p>
+                <img src="./img/authen.png" alt="Autor authentication">
+              </div>
+            </div>
+            <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo 
+              da análise da dimensão e impacto de processo formativo situado impacto 
+              de processo formativo processo resente relato inscreve-se no campo da 
+              análise da dimensão e impacto de processo formativo situado impacto
+              de processo formativo processo.
+            </p>
+          </div>
+          <div class="comments reply" data-show="comments">
+            <p class="author-name">Carlos Henrique dos Santos</p>
+            <p class="answer">Consegui entender melhor agora! Parece que a variação 
+              da análise da dimensão e impacto de processo formativo situado impacto 
+              de processo formativo.
+              <br><br>
+              Obrigada pela resposta, muito interessante o seu trabalho!
+            </p>  
+          </div>
+          <div class="comments" data-show="comments">
+            <div class="author">
+              <p class="author-name">Camila Ferreira Andrade</p>
+              <div class="author-authen">
+                <p>Coautor</p>
+                <img src="./img/authen.png" alt="Autor authentication">
+              </div>
+            </div>
+            <p class="answer">Também ínteressante lembrar que o relato inscreve-se no 
+              campo da análise da dimensão e impacto de processo formativo situado 
+              impacto de processo formativo processo resente relato inscreve-se no 
+              campo da análise da dimensão e impacto de processo formativo situado 
+              impacto de processo formativo processo.
+              <br><br>
+              Situado impacto de processo formativo processo resente relato 
+              inscreve-se no campo da análise da dimensão e impacto de processo 
+              formativo situado impacto de processo formativo processo.
+            </p>
+          </div>
+          <div class="comments" data-show="comments">
+            <div class="author">
+              <p class="author-name">Ana Carolina</p>
+              <div class="author-authen">
+                <p>Coautor</p>
+                <img src="./img/authen.png" alt="Autor authentication">
+              </div>
+            </div>
+            <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da 
+              dimensão e impacto de processo formativo situado impacto de processo
+              formativo processo resente relato inscreve-se no campo da análise 
+              da dimensão e impacto de processo formativo situado impacto de 
+              processo formativo processo.
+            </p>
+          </div>
         </div>
       </div>
     </section>
