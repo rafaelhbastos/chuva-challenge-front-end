@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <div class="side-menu-container">
+  <div class="side-menu-container" data-anime="show-right">
     <div class="side-menu">
       <div class="main-title">
         <h1>SLACA 2019</h1>
@@ -26,7 +26,7 @@
           <li><a href="#">Comitês</a></li>
           <li><a href="#">Autores</a></li>
           <li><a href="#">Eixos temáticos</a></li>
-          <li><a href="#">Trabalhos</a></li>
+          <li><a class="active" href="#">Trabalhos</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
@@ -34,7 +34,7 @@
   </div>
 
   <div class="content">
-    <header class="header">
+    <header class="header" data-anime="show-down">
       <div class="container">
         <div class="header-title">
           <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
@@ -61,7 +61,7 @@
       </div>
     </header>
 
-    <section class="container">
+    <section class="container" data-anime="show-down">
       <div class="video-content">
         <h2 class="video-main-title">Análise sensorial de preparações funcionais 
           desenvolvidas para escolares entre 09 e 15 anos, do município de 
@@ -120,7 +120,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-anime="show-down">
       <div class="abstract">
         <div class="box-title">
           <h2>Resumo</h2>
@@ -138,12 +138,39 @@
             Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros 
             vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit 
             ametl accumsant... <span class="see-more">ver mais</span>
+            <span class="rest">
+              vitae luctus dui. Donec id euismod mauris, in volutpat urna. 
+              <br><br>
+              Proin dapibus consequat feugiat. Proin dictum justo arcu, quis 
+              vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus
+              mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, 
+              tincidunt id elit non, suscipit interdum turpis. Etiam finibus 
+              urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et 
+              pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum 
+              pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
+              <br><br>
+              Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula 
+              id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer 
+              scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget 
+              lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur 
+              facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim 
+              sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus 
+              hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+              <br><br>
+              Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. 
+              Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat 
+              volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at 
+              viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, 
+              iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec 
+              varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit 
+              amet, consectetur adipiscing elit. 
+            </span>
           </p>
         </div>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-anime="show-down">
       <div class="discussion">
         <div class="box-title">
           <h2>Discussões</h2>
@@ -242,7 +269,7 @@
               <p>1 resposta</p>
             </div>
           </div>
-          <div class="comments" data-show="comments">
+          <div class="comments" data-show="appear">
             <div class="author">
               <p class="author-name">Adriano da Silva</p>
               <div class="author-authen">
@@ -257,7 +284,7 @@
               de processo formativo processo.
             </p>
           </div>
-          <div class="comments reply" data-show="comments">
+          <div class="comments reply" data-show="appear">
             <p class="author-name">Carlos Henrique dos Santos</p>
             <p class="answer">Consegui entender melhor agora! Parece que a variação 
               da análise da dimensão e impacto de processo formativo situado impacto 
@@ -266,7 +293,7 @@
               Obrigada pela resposta, muito interessante o seu trabalho!
             </p>  
           </div>
-          <div class="comments" data-show="comments">
+          <div class="comments" data-show="appear">
             <div class="author">
               <p class="author-name">Camila Ferreira Andrade</p>
               <div class="author-authen">
@@ -285,7 +312,7 @@
               formativo situado impacto de processo formativo processo.
             </p>
           </div>
-          <div class="comments" data-show="comments">
+          <div class="comments" data-show="appear">
             <div class="author">
               <p class="author-name">Ana Carolina</p>
               <div class="author-authen">
@@ -304,6 +331,21 @@
       </div>
     </section>
 
+    <footer class="container" data-anime="show-down">
+      <div class="footer">
+        <a href="https://galoa.com.br/" target="blank"><img src="./img/footer-image.png" alt="footer-image"></a>
+        <div class="footer-text">
+          <p><span>Presevar a memória do evento e ampliar o acesso ao conhecimento
+            científico</span> gerado em eventos é a razão de ser da plataforma Galoá Proceedings.
+          </p>
+          <br>
+          <p>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a 
+            comunidade científica, mantendo acesso ao debate científico fomentado pelos encontros 
+            e aumentando o impacto do evento.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script type="module" src="./script/script.js"></script>
