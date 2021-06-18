@@ -994,5 +994,8 @@ body {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 -8px #fff, 0 8px #fff;
+  }
+  .js [data-menu="button"].active::after {
+    transform: rotate(90deg);
   } 
 }
