@@ -29,6 +29,7 @@ body {
   background: #fff;
   font-family: 'Roboto', sans-serif;
   display: flex;
+  cursor: default;
 }
 
 .container {
@@ -37,7 +38,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 256px;
-  padding-right: 29px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .side-menu-container {
@@ -195,13 +197,21 @@ body {
   font-size: 0.75rem;
 }
 
-.video{
+.video {
+  position: relative;
+  height: 439px;
+  max-width: 783px;
+}
+
+.video-text{
+  position: absolute;
   background-color: rgba(141, 53, 6, 0.5);
   height: 439px;
-  width: 783px;
+  max-width: 783px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  top: calc(100% - 439px);
 }
 
 .video-main-title {
@@ -213,11 +223,8 @@ body {
   letter-spacing: 0.05rem;
 }
 
-.video-background {
-  background: url('../img/video-background.png') no-repeat;
-}
 
-.video .video-title {
+.video-text .video-title {
   font-size: 1.5rem;
   font-weight: 900;
   color: white;
@@ -225,7 +232,7 @@ body {
   letter-spacing: 0.05rem;
 }
 
-.video .video-user {
+.video-text .video-user {
   padding: 0 0 60px 35px;
   color: #fff;
   font-weight: 900;
@@ -233,18 +240,18 @@ body {
   display: flex;
 }
 
-.video .video-user img {
+.video-text .video-user img {
   border-radius: 50%;
   border: 1px solid #ED7839;
   margin-right: 17px;
   padding: 4.26px 4.57px;
 }
 
-.video .video-user .text p {
+.video-text .video-user .text p {
   font-size: 2.25rem;
 }
 
-.video .video-user .text span {
+.video-text .video-user .text span {
   font-size: 1.25rem;
 }
 
@@ -378,11 +385,11 @@ body {
   text-decoration: underline;
 }
 
-.abstract-text .rest {
+.abstract-text .rest-abstract {
   display: none;
 }
 
-.abstract-text .rest.active {
+.abstract-text .rest-abstract.active {
   display: block;
   animation: appear .3s forwards;
 }
@@ -599,6 +606,15 @@ body {
 .topic-question {
   font-size: 0.875rem;
   color: #4D4D4D;
+}
+
+.topic-question .rest-topic {
+  display: none;
+}
+
+.topic-question .rest-topic.active {
+  display: block;
+  animation: appear .3s forwards;
 }
 
 .topic-footer {
