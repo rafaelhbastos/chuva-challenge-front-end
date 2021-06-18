@@ -97,6 +97,30 @@ body {
   background: #FDF1EB;
 }
 
+.user-topic {
+  display: none;
+}
+
+.topics li p {
+  cursor: pointer;
+  color: #725C5C;
+  font-weight: 500;
+  display: block;
+  padding: 7px 0 7px 24px;
+  background: #fff;
+  transition: .3s;
+}
+
+.topics li p:hover {
+  margin-left: 5px;
+  background: #FDF1EB;
+}
+
+.topics li p.active {
+  margin-left: 5px;
+  background: #FDF1EB;
+}
+
 .header {
   background: #FDF1EB;
   width: 100vw;
@@ -774,6 +798,44 @@ body {
   animation: show-right .5s forwards;
 }
 
+.topics .user {
+  display: none;
+  flex-direction: column;
+  margin: 7px 5px;
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  padding: 5px 0;
+  animation: appear .3s forwards;
+}
+
+.topics .login {
+  margin: 0 0 0 18px;
+}
+
+.topics .login-text {
+  margin: 0;
+}
+
+.topics .login-text :first-child {
+  font-size: 0.75rem;
+}
+
+.topics .login-text :last-child {
+  font-size: 0.675rem;
+}
+
+.topics .account img {
+  margin-left: 2px;
+}
+
+.topics .language {
+  width: 90px;
+  justify-content: center;
+  padding: 4px 5px;
+  margin: 5px auto;
+  background: #FDF1EB;
+}
+
 @keyframes show-right {
   from {
     opacity: 0;
@@ -800,9 +862,16 @@ body {
   }
 }
 
+[data-menu="button"] {
+  display: none;
+}
+
 @media(max-width: 1322px) {
   .video-content {
     margin: 0 auto;
+  }
+  .video-main-title {
+    text-align: center;
   }
   .work-details{
     margin: 30px auto 0 auto;
@@ -853,11 +922,77 @@ body {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1075px) {
   .side-menu-container {
     display: none;
+  }
+  .side-menu-container.show {
+    display: block;
+  }
+  .main-title {
+    padding: 10px 20px;
+    height: auto;
+  }
+  .main-title h1 {
+    padding: 0;
+  }
+  .logo img {
+    margin: 0 auto;
+    height: 200px;
+    width: 162px;
+  }
+  .user-topic {
+    display: block;
   }
   .container {
     padding-left: 20px;
   }
+  .header .container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .header-title::before {
+    display: none;
+  }
+  .header-title {
+    max-width: 700px;
+  }
+  .user {
+    display: none;
+  }
+  .topics .user.active {
+    display: flex;
+  }
+  .js [data-menu="button"] {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(#FFB354, #EE7A3A);
+    border: none;
+    border-radius: 4px;
+    align-self: center;
+    margin-right: 15px;
+    color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+  }
+  .js [data-menu="button"].active {
+    margin-left: 210px;
+  }
+  .js [data-menu="button"]:hover {
+    transform: scale(1.1);
+  }
+  .js [data-menu="button"]::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    width: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 -8px #fff, 0 8px #fff;
+  } 
 }
