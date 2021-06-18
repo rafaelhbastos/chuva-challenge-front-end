@@ -827,5 +827,37 @@ body {
 }
 
 @media(max-width: 1273px) {
-  
+  .header .container {
+    flex-direction: column-reverse;
+  }
+
+  .header-title::before {
+    content: "";
+    display: block;
+    width: 645px;
+    height: 1px;
+    margin-bottom: 12px;
+    background: rgba(89, 89, 89, 0.4);
+  }
+
+  .header-title {
+    margin: 5px auto 4px auto;
+    padding-right: 10px;
+  }
+  .user {
+    margin: 10px 0 10px 0;
+    justify-content: space-around;
+  }
+  .login {
+    margin: auto 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .side-menu-container {
+    display: none;
+  }
+  .container {
+    padding-left: 20px;
+  }
 }
