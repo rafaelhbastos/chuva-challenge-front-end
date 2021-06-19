@@ -1,17 +1,21 @@
 export default function activeMenu() {
-  const menuButton = document.querySelector('[data-menu="button"]');
+  const menuButton = document.querySelectorAll('[data-menu="button"]');
   const sideBar = document.querySelector('.side-menu-container');
 
   function showSideBar() {
-    menuButton.classList.toggle('active');
+    menuButton.forEach(btn => {
+      btn.classList.toggle('active');
+    });
 
-    if(menuButton.classList.contains('active')) {
+    if(menuButton[0].classList.contains('active')) {
       sideBar.classList.add('show')
     } else {
       sideBar.classList.remove('show')
     }
   }
 
-  menuButton.addEventListener('click', showSideBar);
-
+  menuButton.forEach(btn => {
+    console.log(btn)
+    btn.addEventListener('click', showSideBar);
+  });
 }
