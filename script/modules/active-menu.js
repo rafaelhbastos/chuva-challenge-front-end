@@ -15,7 +15,6 @@ export default function activeMenu() {
   }
 
   menuButton.forEach(btn => {
-    console.log(btn)
     btn.addEventListener('click', showSideBar);
   });
 }
